@@ -1,0 +1,9 @@
+CREATE DATABASE u_courses;
+
+CREATE TABLE u_courses(
+    id BIGSERIAL PRIMARY KEY,
+    username VARCHAR(80) NOT NULL,
+    age NUMBER NOT NULL,
+    mojor VARCHAR(255) NOT NULL
+    password VARCHAR(255) NOT NULL
+)

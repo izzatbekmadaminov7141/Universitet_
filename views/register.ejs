@@ -1,0 +1,41 @@
+<%- include('Layout/head.ejs') %>
+<main class="bg-gray-100 h-[100vh]">
+  <div class="container mx-auto">
+    <div class="flex justify-center items-center flex-col h-[70vh]">
+      <div class="w-[40vw] p-5">
+        <form
+          action="/register"
+          method="POST"
+          class="flex flex-col gap-10 w-[100%] border bg-white p-5"
+        >
+          <h1 class="text-3xl my-5 text-center">Register Student</h1>
+          <!-- username -->
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            class="rounded"
+          />
+          <!-- age -->
+          <input type="number" name="age" placeholder="Age" class="rounded" />
+          <!-- Mojor -->
+          <input type="text" name="mojor" placeholder="Mojor" class="rounded" />
+          <!-- password  -->
+          <input
+            type="text"
+            name="password"
+            placeholder="Password"
+            class="rounded"
+          />
+          <input
+            type="submit"
+            value="Login"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          />
+          <a href="/" class="text-center text-blue-500">Login Student</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<%- include('Layout/main.ejs') %>
